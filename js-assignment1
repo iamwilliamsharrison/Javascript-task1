@@ -1,0 +1,13 @@
+let person ={
+    name: 'Harrison Godson Nzubechi'
+};
+console.log(person)
+let selectedCourses = ['Html', 'css','Javascript','ui/ux design']
+console.log(selectedCourses)
+let userName = 'iamwilliamsharrison';
+console.log(userName)
+    function printEven(begin, end){
+        for (begin +=(begin%2), end-= (end%2); begin<=end;begin+=2)
+        console.log(begin+'\n');
+    }
+    printEven(1,200);
