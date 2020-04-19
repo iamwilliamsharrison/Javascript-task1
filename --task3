@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//A function that takes one parameter(a whole no) and checks if 1-30 are divisible by 2,3,5
+function checkDivisibilty(number) {
+    let number= 30;
+    let Array=[];
+    for (var i = 0; i<=30; i++){
+       // numbers divisible by 2,3 & 5 are replaced as yu-gi-oh 
+    if( i%2==0  && i%3==0 && i%5==0){
+            return Array.push("yu-gi-oh")
+
+          // numbers divisible by 3 & 5 are replaced as gi-oh
+        }else if( i%3==0  && i%5==0){
+            return Array.push("gi-oh")
+        // numbers divisible by 2 & 5 are replaced as yu-oh
+        }else if( i%2==0  && i%5==0){
+            return Array.push("yu-oh")
+        
+             // numbers divisible by 2 & 3 are replaced as yu-gi
+            }else if(i%2 ==0 && i%3==0){
+            return Array.push("yu-gi")
+
+       // numbers divisible by 5 are replaced as oh
+        }else if (i%5==0){
+            return Array.push("oh")
+
+            // numbers divisible by 3 are replaced as gi
+
+        }else if (i%3==0){
+            return Array.push("gi")
+
+            // numbers divisible by 2 are replaced as yu
+ 
+        }  else if (i%2==0){
+            return Array.push("yu")
+   
+            // numbers not divisible are unchanged
+        } else{return Array.push(number)}
+    } console.log(Array)
+ };
+
+//call the function and pass 100 as argument
+checkDivisibilty.call(100);
+console.log(checkDivisibilty(100));
+
+
+//call the function and pass 50
+checkDivisibilty.call(50);
+console.log(checkDivisibilty(50));
+    </script>
+</body>
+</html>
